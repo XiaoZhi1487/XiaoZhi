@@ -4,8 +4,9 @@ $(document).ready(function () {
 
     // 音乐文件路径数组
     var musicList = [
-        'music/winD - かわいい (可可爱爱).ogg',
-        
+        'music/洛少爷 - 玫瑰少年.ogg',
+        'music/洛少爷 - 人是_.ogg',
+        'music/洛少爷 - 悬溺.ogg'
     ];
     var currentMusicIndex = 0;
     var audioElement = $('<audio>', {

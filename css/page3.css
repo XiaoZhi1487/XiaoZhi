@@ -1,0 +1,82 @@
+#catListDisplay {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+    font-size: 20px;
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+#catListDisplay div {
+    width: auto;
+    display: grid;
+    gap: 5px;
+    padding: 5px;
+    overflow: hidden;
+    border: 1px solid #ddd;
+}
+#catListDisplay div:hover{
+    background-color: rgba(255, 255, 255, 0.3);
+}
+#catListDisplay div span {
+    padding: 2px;
+    width: 70%;
+}
+
+
+.edit-btn{
+    background-color :rgba(224, 224, 224, 0.8);
+}
+.edit-btn:hover{
+    background-color :rgb(255, 255, 255);
+}
+
+.delete-btn {
+    background-color: rgba(244, 67, 54, 0.8);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.delete-btn:hover{
+    background-color: rgba(244, 67, 54, 1);
+}
+
+.edit-btn , .delete-btn ,.qd_btn{
+    width: 200px;
+    /* height: 100px; */
+    /* float: left; */
+
+}
+.inp{
+    background-color: rgba(255, 255, 255, 0.6);
+}
+.inp:hover{
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+
+/* #addDataButton{
+    width: 50px;
+    height: 30px;
+} */
+
+.container input,button{
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 10px;
+}
+
+
+
+.container button{
+    cursor: pointer;
+}
+
+.container button:active{
+    background-color: rgba(173, 173, 173, 0.664);
+    border: #000 solid 2px;
+}
+
+

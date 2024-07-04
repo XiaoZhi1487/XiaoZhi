@@ -1,0 +1,343 @@
+* {
+	font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+
+a {
+	color: inherit;
+	/* 重置文字颜色 */
+	text-decoration: none;
+	/* 取消下划线 */
+	background-color: transparent;
+	/* 背景颜色透明 */
+	font-weight: normal;
+	/* 字体粗细正常 */
+	font-style: normal;
+	/* 字体样式正常 */
+	font-size: inherit;
+	/* 字体大小继承自父元素 */
+	border: none;
+	/* 取消边框 */
+	padding: 0;
+	/* 内边距为0 */
+	margin: 0;
+	/* 外边距为0 */
+	display: inline;
+	/* 显示方式为内联 */
+	-webkit-appearance: none;
+	/* 在某些浏览器中取消默认的外观 */
+	-moz-appearance: none;
+	appearance: none;
+	/* 其他可能需要重置的属性 */
+}
+
+
+body,
+html {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	/* 防止滚动条出现 */
+}
+
+.video {
+	position: fixed;
+	/* 视频固定位置，不随页面滚动 */
+	/* right: 0;
+	bottom: 0; */
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+
+	z-index: -1000;
+	/* 确保视频在页面内容的下方 */
+	/* background-size: cover; */
+	/* background-position: center;
+	background-repeat: no-repeat; */
+}
+
+/* 内容主体 */
+#zhu {
+	margin: 5% 0 0 15%;
+	width: 70%;
+	height: 80%;
+	text-shadow: 1px 1px 4x rgba(0, 0, 0, 0.5);
+	float: left;
+	border-radius: 5px;
+	overflow: hidden;
+}
+
+/* 侧边栏 */
+.cebianlan {
+	width: 200px;
+	height: 100%;
+	background: rgba(255, 255, 255, 0.7);
+	float: left;
+	overflow: hidden;
+}
+
+/* 个人 */
+.geren {
+	width: 200px;
+	height: 200px;
+}
+
+/* 头像 */
+.touxiang {
+	margin: 30px 0 0 65px;
+	width: 70px;
+	border-radius: 50px;
+	border: rgba(255, 255, 255) solid 2px;
+}
+
+.touxiang:hover {
+	cursor: pointer;
+}
+
+/* 快速变化的阴影 */
+.bounce-fast {
+	animation: bounce-shadow-fast 0.4s infinite;
+}
+
+@keyframes bounce-shadow-fast {
+
+	0%,
+	100% {
+		box-shadow: 0 0 10px rgba(0, 255, 242, 0.8);
+	}
+
+	50% {
+		box-shadow: 0 0 60px rgba(0, 110, 255, 0.8);
+	}
+}
+
+/* 慢速变化的阴影 */
+/* .bounce-slow {
+			animation: bounce-shadow-slow 1s infinite;
+		}
+		
+		@keyframes bounce-shadow-slow {
+			0%, 100% {
+			box-shadow: 0 0 0px rgba(251, 255, 0, 0.8);
+			}
+			50% {
+			box-shadow: 0 0 40px rgba(0, 217, 255, 0.9);
+			}
+		} */
+
+/* 名字 */
+.name {
+	width: 200px;
+	margin: 10px 0 0 10px;
+	font-size: 35px;
+}
+
+/* 个性签名 */
+.gxqm {
+	width: 180px;
+	height: 30px;
+	padding: 3px;
+}
+
+/* 导航 */
+.daohang {
+	width: 150px;
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 10px;
+}
+
+.daohang2 {
+	display: none;
+}
+
+/* 按钮 */
+.dh_button {
+	width: 200px;
+	height: 70px;
+	border: none;
+	cursor: pointer;
+	font-size: 35px;
+	background: rgba(255, 255, 255, 0);
+	color: #000;
+}
+
+.dh_button:hover {
+	background: rgba(255, 255, 255, 0.2);
+	transform: scale(1.05);
+	transition: transform 0.5s;
+}
+
+.dh_button:active {
+	background-color: rgba(199, 199, 199, 0.5);
+
+}
+
+.btandnr {
+	transform: translateY(100%);
+	transition: transform 1s;
+	margin-left: 200px;
+	height: 100%;
+	width: calc(100%-200px);
+}
+
+/* 标题 */
+.biaoti {
+	width: auto;
+	height: 100px;
+	background: rgba(255, 255, 255, 0.5);
+	line-height: 100px;
+}
+
+.bt {
+	margin-left: 50px;
+	font-size: 50px;
+}
+
+/* 内容 */
+.container {
+	overflow: auto;
+	background-color: rgba(255, 255, 255, 0.1);
+	padding: 30px 20px 100px 20px;
+	height: 100%;
+	width: 100%;
+	float: left;
+	box-sizing: border-box;
+}
+
+.container_h {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
+	margin-bottom: 30px;
+}
+
+/* 隐藏默认滚动条样式 */
+.container::-webkit-scrollbar {
+	width: 8px;
+	/* 设置滚动条的宽度 */
+	background-color: transparent;
+	/* 设置滚动条背景为透明 */
+}
+
+/* 设置滚动条滑块的样式 */
+.container::-webkit-scrollbar-thumb {
+	background-color: #ffffff;
+	/* 设置滚动条滑块的背景颜色 */
+	border-radius: 3px;
+	/* 设置滚动条滑块的圆角 */
+}
+
+/* 设置滚动条轨道的样式 */
+.container::-webkit-scrollbar-track {
+	margin-bottom: 100px;
+	background-color: #5e5e5e;
+	/* 设置滚动条轨道的背景颜色 */
+}
+
+.card {
+	background-color: rgba(255, 255, 255, 0.1);
+	color: #ffffff;
+	backdrop-filter: blur(5px);
+	width: 150px;
+	height: auto;
+	margin: 0 auto;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+	transition: 0.3s;
+	border-radius: 5px;
+	/* 圆角边框 */
+
+}
+
+.card:hover {
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
+}
+
+.card-image {
+	border-radius: 5px 5px 0 0;
+	overflow: hidden;
+	height: 150px;
+	display: flex;
+	justify-content: center;
+}
+
+.card-image img {
+	height: 100%;
+	display: block;
+
+}
+
+.card-content {
+	text-align: center;
+}
+
+.card-title {
+	text-shadow: 2px 2px 4px #000000;
+	;
+	margin: 10px 0;
+}
+
+#touxiang {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+
+#touxiang img {
+	margin: 100px 0 0 0;
+}
+
+.animate {
+	transition: opacity 0.5s ease-in-out;
+}
+
+#success-alert {
+	position: fixed;
+	top: 15%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 9999;
+	background-color: rgba(45, 255, 45, 0.5);
+	/* 绿色背景 */
+	color: white;
+	padding: 10px 30px 10px 30px;
+	border-radius: 5px;
+	text-align: center;
+	display: none;
+}
+
+#error-alert {
+	position: fixed;
+	top: 20%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 9999;
+	background-color: rgba(255, 43, 43, 0.6);
+	/* 红色背景 */
+	color: white;
+	padding: 10px 30px 10px 30px;
+	border-radius: 5px;
+	text-align: center;
+	display: none;
+	cursor: pointer;
+}
+
+.error-code {
+	font-weight: bold;
+	margin-top: 10px;
+}
+
+#refresh-btn{
+	/* position: fixed; */
+	background-color: rgba(255, 255, 255, 0.2);
+	/* 红色背景 */
+	color: white;
+	padding: 10px 20px 10px 20px;
+	border-radius: 100px;
+	text-align: center;
+	cursor: pointer;
+	float: right;
+	margin: 25px 20px 0 0;
+}

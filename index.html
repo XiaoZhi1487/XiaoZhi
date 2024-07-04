@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>小稚的小破站</title>
+	<link rel="stylesheet" href="css/主机版.css">
+	<link rel="stylesheet" href="css/手机版.css">
+	<link rel="stylesheet" href="css/page3.css">
+	<script src="js/jquery-1.8.0.js"></script>
+</head>
+
+<body>
+	<img src="video/1.png" alt="" class="video">
+	<!-- 主体 -->
+	<div id="zhu">
+		<!-- 侧边栏 -->
+		<div class="cebianlan">
+			<!-- 头像名称 -->
+			<div class="geren">
+				<img src="img/小稚.jpg" alt="" class="touxiang">
+				<p class="name">我是小稚鸭</p>
+			</div>
+			<!-- 导航栏 -->
+			<div class="daohang"></div>
+		</div>
+		<!-- 标题and内容1 -->
+		<div class="btandnr" id="p1">
+			<div class="biaoti">
+				<span class="bt">首页</span>
+			</div>
+			<div class="container">
+			</div>
+		</div>
+
+		<!-- 标题and内容2 -->
+		<div class="btandnr" id="p2">
+			<div class="biaoti">
+				<span class="bt">常用网站</span>
+				<button id="refresh-btn">刷新</button>
+			</div>
+			<div class="container">
+				<div class="container_h">
+				</div>
+			</div>
+		</div>
+
+		<!-- 标题and内容3 -->
+		<div class="btandnr" id="p3">
+			<div class="biaoti">
+				<span class="bt">数据库</span>
+			</div>
+			<div class="container">
+				<input type="text" id="catName" class="inp" placeholder="请输入网名">
+				<input type="text" id="catAge" class="inp" placeholder="请输入网址">
+				<input type="text" id="catColor" class="inp" placeholder="请输入图片路径">
+				<button id="addDataButton" class="sjk_button">添加</button><br>
+
+				<textarea id="jsonData" placeholder="粘贴要替换的JSON数据"></textarea><br>
+				<button id="replaceDataButton">更换数据库</button><br>
+
+				<button id="zhantieappend">导入默认数据库</button>
+				<button id="copyDataButton" class="sjk_button">复制我的数据库</button>
+
+				<div id="catListDisplay" class="sjck"></div>
+			</div>
+		</div>
+
+		<!-- 标题and内容5 -->
+		<div class="btandnr" id="p5">
+			<div class="biaoti">
+				<span class="bt">个人简介</span>
+			</div>
+			<div class="container">
+			</div>
+		</div>
+		<div class="daohang2"></div>
+	</div>
+
+	<div id="touxiang" style="display: none;">
+		<img src="img/小稚.jpg" alt="头像" class="touxiang">
+	</div>
+
+	<div id="success-alert">操作成功！</div>
+
+	<div id="error-alert">
+		操作失败！<br>
+		<span class="error-code"></span>
+	</div>
+</body>
+<script src="js/tongyong.js"></script>
+<script src="js/page2.js"></script>
+<script src="js/page3.js"></script>
+
+</html>
